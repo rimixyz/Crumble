@@ -141,5 +141,5 @@ A remoção de cookies é **irreversível**. Cookies removidos podem incluir:
 ---
 
 <p align="center">
-  Feito com ❤️ por <strong>DelCookies Contributors</strong>
+  Feito com ❤️ por <strong>rimi</strong>
 </p>

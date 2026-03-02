@@ -3,7 +3,7 @@
   "name": "DelCookies",
   "version": "1.0.0",
   "description": "Remova todos os cookies do site atual com um clique. Simples, rápido e seguro.",
-  "author": "DelCookies Contributors",
+  "author": "rimi",
   "minimum_chrome_version": "88",
   "permissions": [
     "cookies",
