@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * DelCookies — Lógica do Popup
+ * Crumble — Lógica do Popup
  * 
  * Gerencia a interface do popup: exibe o domínio da aba ativa,
  * detecta páginas internas, envia mensagem ao service worker
@@ -89,7 +89,7 @@ async function mostrarSiteAtual() {
         const url = new URL(tab.url);
         currentSiteEl.textContent = url.hostname;
     } catch (error) {
-        console.error("[DelCookies] Erro ao obter site atual:", error);
+        console.error("[Crumble] Erro ao obter site atual:", error);
         exibirPaginaInterna();
     }
 }
@@ -153,7 +153,7 @@ async function limparCookies() {
 
     } catch (error) {
         // Erro de comunicação ou erro inesperado
-        console.error("[DelCookies] Erro ao limpar cookies:", error);
+        console.error("[Crumble] Erro ao limpar cookies:", error);
         resultMessage.textContent = "❌ Erro ao limpar os cookies. Tente novamente.";
         resultMessage.className = "result error fade-in";
     } finally {
@@ -220,3 +220,4 @@ function desativarLoading() {
     btnText.classList.remove("hidden");
     btnLoading.classList.add("hidden");
 }
+

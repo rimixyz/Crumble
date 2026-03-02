@@ -1,4 +1,4 @@
-# 🍪 DelCookies
+# 🍪 Crumble
 
 **Limpe os cookies do site atual com um único clique.**
 
@@ -11,9 +11,9 @@
 
 ## 📖 Descrição
 
-O **DelCookies** é uma extensão para Google Chrome que remove todos os cookies **apenas do site que você está visitando** na aba ativa. Nada de apagar todos os cookies do navegador — apenas os do domínio atual, com um único clique. Simples, rápido e seguro.
+O **Crumble** é uma extensão para Google Chrome que remove todos os cookies **apenas do site que você está visitando** na aba ativa. Nada de apagar todos os cookies do navegador — apenas os do domínio atual, com um único clique. Simples, rápido e seguro. Nosso principal objetivo com esta extensão é manter a **simplicidade**. Sem configurações complexas, sem opções confusas, apenas uma função que funciona de forma direta e elegante, com um design minimalista.
 
-![Screenshot do DelCookies](screenshots/popup.png)
+
 
 ---
 
@@ -35,12 +35,12 @@ O **DelCookies** é uma extensão para Google Chrome que remove todos os cookies
 
 1. **Baixe ou clone** este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/DelCookies.git
+   git clone https://github.com/seu-usuario/Crumble.git
    ```
 2. Abra o Chrome e acesse **`chrome://extensions/`**
 3. Ative o **"Modo do desenvolvedor"** (toggle no canto superior direito)
 4. Clique em **"Carregar sem compactação"**
-5. Selecione a pasta `DelCookies/`
+5. Selecione a pasta `Crumble/`
 6. ✅ O ícone 🍪 aparecerá na barra de ferramentas do Chrome
 
 ---
@@ -48,9 +48,9 @@ O **DelCookies** é uma extensão para Google Chrome que remove todos os cookies
 ## 🚀 Como Usar
 
 1. 🌐 Navegue até qualquer site (ex: `google.com`, `github.com`)
-2. 🍪 Clique no ícone do **DelCookies** na barra de ferramentas
+2. 🍪 Clique no ícone do **Crumble** na barra de ferramentas
 3. 👁️ Veja o domínio atual exibido no popup
-4. 🗑️ Clique em **"Limpar Cookies deste Site"**
+4. Clique em **"Limpar Cookies deste Site"**
 5. ✅ Veja a contagem de cookies removidos e o feedback visual!
 
 ---
@@ -65,7 +65,7 @@ O **DelCookies** é uma extensão para Google Chrome que remove todos os cookies
 | `notifications` | Para exibir a notificação nativa com a contagem de cookies removidos |
 | `<all_urls>` | Para que a API de cookies funcione em qualquer site que você visite |
 
-> 🔒 **Privacidade:** O DelCookies **não coleta, armazena ou transmite** nenhum dado. Tudo acontece localmente no seu navegador. Nenhuma informação sai do seu computador.
+> 🔒 **Privacidade:** O Crumble **não coleta, armazena ou transmite** nenhum dado. Tudo acontece localmente no seu navegador. Nenhuma informação sai do seu computador.
 
 ---
 
@@ -81,7 +81,7 @@ O **DelCookies** é uma extensão para Google Chrome que remove todos os cookies
 ## 📁 Estrutura do Projeto
 
 ```
-DelCookies/
+Crumble/
 │
 ├── manifest.json          # Configuração da extensão (Manifest V3)
 ├── background.js          # Service worker — lógica de deleção de cookies
@@ -136,10 +136,11 @@ A remoção de cookies é **irreversível**. Cookies removidos podem incluir:
 - ⚙️ Preferências e configurações do site
 - 🛒 Itens no carrinho de compras
 
-**Use com consciência.** O DelCookies remove apenas os cookies do site atual, mas isso pode afetar sua experiência naquele site.
+**Use com consciência.** O Crumble remove apenas os cookies do site atual, mas isso pode afetar sua experiência naquele site.
 
 ---
 
 <p align="center">
   Feito com ❤️ por <strong>rimi</strong>
 </p>
+

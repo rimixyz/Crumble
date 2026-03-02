@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * DelCookies — Service Worker (Background Script)
+ * Crumble — Service Worker (Background Script)
  * 
  * Este é o coração da extensão. Contém toda a lógica de busca,
  * deduplicação e remoção de cookies do site/domínio da aba ativa.
@@ -111,7 +111,7 @@ function updateBadge(count) {
  * @param {string} domain - O domínio do site processado.
  */
 function sendNotification(count, domain) {
-    const notificationId = "delcookies-" + Date.now();
+    const notificationId = "Crumble-" + Date.now();
 
     const message = count > 0
         ? `${count} cookie(s) de ${domain} removido(s)!`
@@ -121,7 +121,7 @@ function sendNotification(count, domain) {
         chrome.notifications.create(notificationId, {
             type: "basic",
             iconUrl: "icons/icon128.png",
-            title: "DelCookies",
+            title: "Crumble",
             message: message,
             priority: 0
         });
@@ -132,7 +132,7 @@ function sendNotification(count, domain) {
         }, 4000);
     } catch (error) {
         // Se notificações não estiverem disponíveis, apenas logar
-        console.warn("[DelCookies] Não foi possível enviar notificação:", error.message);
+        console.warn("[Crumble] Não foi possível enviar notificação:", error.message);
     }
 }
 
@@ -245,7 +245,7 @@ async function deleteCookiesFromCurrentTab() {
             return chrome.cookies.remove({ url: cookieUrl, name: cookie.name });
         } catch (error) {
             // Se houver erro ao montar a URL, retornar null (será contado como falha)
-            console.warn(`[DelCookies] Erro ao preparar remoção do cookie "${cookie.name}":`, error.message);
+            console.warn(`[Crumble] Erro ao preparar remoção do cookie "${cookie.name}":`, error.message);
             return Promise.resolve(null);
         }
     });
@@ -283,7 +283,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         deleteCookiesFromCurrentTab()
             .then(result => sendResponse(result))
             .catch(error => {
-                console.error("[DelCookies] Erro na deleção de cookies:", error);
+                console.error("[Crumble] Erro na deleção de cookies:", error);
                 sendResponse({
                     success: false,
                     count: 0,
@@ -297,3 +297,4 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         return true;
     }
 });
+

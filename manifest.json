@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "DelCookies",
+  "name": "Crumble",
   "version": "1.0.0",
   "description": "Remova todos os cookies do site atual com um clique. Simples, rápido e seguro.",
   "author": "rimi",
@@ -22,7 +22,7 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     },
-    "default_title": "DelCookies — Limpar cookies do site atual"
+    "default_title": "Crumble — Limpar cookies do site atual"
   },
   "background": {
     "service_worker": "background.js"
